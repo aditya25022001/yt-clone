@@ -8,30 +8,38 @@ import VideoCallIcon from '@material-ui/icons/VideoCall';
 import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import MenuIcon from '@material-ui/icons/Menu';
 
 export const Navigation = () => {
     return (
         <div className="navigation">
+            
+            
             <div className="goto">
-                <div id="line1"></div>
-                <div id="line2"></div>
-                <div id="line3"></div>
-            </div>
-            <div className="logo">
-                <YouTubeIcon className="yt-icon" style={{ fontSize:30 }} />
-                <div className="yt-icon-label">YouTube
-                    <sup className="india">IN</sup>
+                <div className="menu">
+                    <MenuIcon style={{color:"white"}} />
+                </div>
+                <div className="logo">
+                    <YouTubeIcon className="yt-icon" style={{ fontSize:30 }} />
+                </div>
+                <div className="yt-icon-label">YouTube<sup className="india">IN</sup>
                 </div>
             </div>
+            
+            
             <div className="search-bar">
-                <input className="search" placeholder="Search"></input>
+                <div className="textarea">
+                    <input className="search" placeholder="Search"></input>
+                </div>
+                <div className="search-lens">
+                    <SearchIcon className="lens" style={{fontSize: 20, color: "rgb(140, 140, 140)"}} />
+                </div>
+                <div className="mic">
+                    <MicIcon style={{color:"white"}} />
+                </div>
             </div>
-            <div className="search-lens">
-                <SearchIcon className="lens" style={{fontSize: 20, color: "rgb(140, 140, 140)"}} />
-            </div>
-            <div className="mic">
-                <MicIcon style={{color:"white"}} />
-            </div>
+            
+            
             <div className="accessories">
                 <div className="add-video">
                     <VideoCallIcon style={{color:"white"}} />

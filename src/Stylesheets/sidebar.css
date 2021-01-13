@@ -11,6 +11,9 @@
     font-weight: bolder;
     height: 730px;
 }
+.settings:hover, .report:hover, .help:hover, .feedback:hover, .home:hover, .trending:hover, .subscriptions:hover, .library:hover, .history:hover, .your-videos:hover, .liked-videos:hover, .watch-later:hover, .show-more:hover, .yt-premium:hover, .movies:hover, .gaming:hover, .live:hover, .learning:hover{
+    background-color: rgb(71, 71, 71);
+}
 .settings, .report, .help, .feedback, .home, .trending, .subscriptions, .library, .history, .your-videos, .liked-videos, .watch-later, .show-more, .yt-premium, .movies, .gaming, .live, .learning{
     color: whitesmoke;
     margin-left:  -10px;
@@ -37,13 +40,6 @@
 .library{
     margin-top: 13px;
 }
-.hrline{
-    width: 240px;
-    height: 0.1px;
-    margin-left: -10px;
-    background-color: rgb(71, 71, 71);
-    color: rgb(71,71,71);
-}
 .subscribed{
     color:rgb(128, 128, 128);
     text-align: left;
@@ -58,4 +54,11 @@
 .more{
     color: rgb(128,128,128);
     margin:10px;
+}
+.hrline{
+    width: 240px;
+    height: 0.1px;
+    margin-left: -10px;
+    background-color: rgb(71, 71, 71);
+    color: rgb(71,71,71);
 }
