@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    background-color: rgb(39, 38, 38);
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 730px;
+}
+.settings, .report, .help, .feedback, .home, .trending, .subscriptions, .library, .history, .your-videos, .liked-videos, .watch-later, .show-more, .yt-premium, .movies, .gaming, .live, .learning{
+    color: whitesmoke;
+    margin-left:  -10px;
+    padding-left: 23px;
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 35px;
+    padding-top: 5px;
+}
+.icon{
+    margin-right: 20px;
+    margin-bottom: 2px;
+}
+.home{
+    background-color: rgb(71, 71, 71);
+    margin-top: 13px;
+    padding-top: 10px;
+}
+.subscriptions{
+    margin-bottom: 13px;
+}
+.library{
+    margin-top: 13px;
+}
+.hrline{
+    width: 240px;
+    height: 0.1px;
+    margin-left: -10px;
+    background-color: rgb(71, 71, 71);
+    color: rgb(71,71,71);
+}
+.subscribed{
+    color:rgb(128, 128, 128);
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.show-more{
+    padding-bottom: 20px;
+}
+.more{
+    color: rgb(128,128,128);
+    margin:10px;
+}
