@@ -19,7 +19,5 @@ body{
 .AppBody{
   display: flex;
   flex-direction: row;
-}
-.sidebar{
-  flex: 0.2;
+  overflow: hidden;
 }

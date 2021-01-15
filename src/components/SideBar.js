@@ -1,4 +1,5 @@
 import React from 'react'
+import { SidebarElements } from './SidebarElements';
 import HomeIcon from '@material-ui/icons/Home';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import WatchLaterIcon from '@material-ui/icons/WatchLater';
@@ -21,157 +22,31 @@ import FeedbackIcon from '@material-ui/icons/Feedback';
 
 export const SideBar = () => {
     return (
-        <div className="sidebar">
-            <div className="home">
-                <div className="icon">
-                    <HomeIcon style={{color:"whitesmoke", fontSize: 20}} />
-                </div>
-                <div className="text">
-                    Home
-                </div>
-            </div>
-            <div className="trending">
-                <div className="icon">
-                    <WhatshotIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/> 
-                </div>
-                <div className="text">
-                    Trending
-                </div>
-            </div>
-            <div className="subscriptions">
-                <div className="icon">
-                    <SubscriptionsIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Subscriptions
-                </div>
-            </div>
+        <div className="sidebar">      
+            <div className="home"><SidebarElements className="home" Icon={<HomeIcon style={{fontSize:25}}/>} title="Home"/></div>       
+            <div className="trending"><SidebarElements className="trending" Icon={<WhatshotIcon style={{fontSize:20}}/>} title="Trending" /></div> 
+            <div className="subscriptions"><SidebarElements className="subscriptions" Icon={<SubscriptionsIcon style={{fontSize:20}}/>} title="Subscriptions" /></div>    
             <div className="hrline"></div>
-            <div className="library">
-                <div className="icon">
-                    <VideoLibraryIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Library
-                </div>
-            </div>
-            <div className="history">
-                <div className="icon">
-                    <HistoryIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    History
-                </div>
-            </div>
-            <div className="your-videos">
-                <div className="icon">               
-                    <VideoLabelIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Your Videos
-                </div>
-            </div>
-            <div className="watch-later">
-                <div className="icon">
-                    <WatchLaterIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Watch Later
-                </div>
-            </div>
-            <div className="liked-videos">
-                <div className="icon">
-                    <ThumbUpAltIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Liked Videos
-                </div>
-            </div>
-            <div className="show-more">
-                <div className="icon">
-                    <ExpandMoreIcon style={{color:"rgb(128, 128, 128)", fontSize: 25, marginLeft: -4}}/>
-                </div>
-                <div className="text">
-                    Show More
-                </div>
-            </div>
+            <div className="library"><SidebarElements className="library" Icon={<VideoLibraryIcon style={{fontSize:20}}/>} title="Library" /></div>
+            <div className="history"><SidebarElements className="history" Icon={<HistoryIcon style={{fontSize:20}}/>} title="History" /></div>
+            <div className="your-videos"><SidebarElements className="your-videos" Icon={<VideoLabelIcon style={{fontSize:20}}/>} title="Your Videos" /></div>
+            <div className="watch-later"><SidebarElements className="watch-later" Icon={<WatchLaterIcon style={{fontSize:20}}/>} title="Watch Later" /></div>
+            <div className="liked-videos"><SidebarElements className="liked-videos" Icon={<ThumbUpAltIcon style={{fontSize:20}}/>} title="Liked Videos" /></div>   
+            <div className="show-more"><SidebarElements clasName="show-more" Icon={<ExpandMoreIcon style={{fontSize:20}}/>} title="Show more"/></div> 
             <div className="hrline"></div>
             <div className="subscribed">SUBSCRIPTIONS</div>
             <div className="hrline"></div>
             <div className="more">MORE FROM YOUTUBE</div>
-            <div className="yt-premium">
-                <div className="icon">
-                    <YouTubeIcon style={{color:"rgb(128,128,128)", fontSize: 20}} />
-                </div>
-                <div className="text">
-                    Youtube Premium
-                </div>
-            </div>
-            <div className="movies">
-                <div className="icon">
-                    <LocalMoviesIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/> 
-                </div>
-                <div className="text">
-                    Movies
-                </div>
-            </div>
-            <div className="gaming">
-                <div className="icon">
-                    <SportsEsportsIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Gaming
-                </div>
-            </div>
-            <div className="live">
-                <div className="icon">
-                    <LiveTvIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Live
-                </div>
-            </div>
-            <div className="learning">
-                <div className="icon">               
-                    <WbIncandescentIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Learning
-                </div>
-            </div> 
+            <div className="yt-premium"><SidebarElements className="yt-premium" Icon={<YouTubeIcon style={{fontSize:20}}/>} title="YouTube Premium" /></div>
+            <div className="movies"><SidebarElements clasName="movies" Icon={<LocalMoviesIcon style={{fontSize:20}}/>} title="Movies" /></div>
+            <div className="gaming"><SidebarElements className="gaming" Icon={<SportsEsportsIcon style={{fontSize:20}}/>} title="Gaming" /></div>
+            <div className="live"><SidebarElements className="live" Icon={<LiveTvIcon style={{fontSize:20}}/>} title="Live" /></div>
+            <div className="learning"><SidebarElements className="learning" Icon={<WbIncandescentIcon style={{fontSize:20}}/>} title="Learning" /></div>
             <div clasName="hrline"></div> 
-            <div className="settings">
-                <div className="icon">
-                    <SettingsIcon style={{color:"rgb(128,128,128)", fontSize: 20}} />
-                </div>
-                <div className="text">
-                    Settings
-                </div>
-            </div>
-            <div className="report">
-                <div className="icon">
-                    <FlagIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/> 
-                </div>
-                <div className="text">
-                    Report History
-                </div>
-            </div>
-            <div className="help">
-                <div className="icon">
-                    <HelpIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Help
-                </div>
-            </div>
-            <div className="feedback">
-                <div className="icon">
-                    <FeedbackIcon style={{color:"rgb(128, 128, 128)", fontSize: 20}}/>
-                </div>
-                <div className="text">
-                    Feedback
-                </div>
-            </div>       
-        </div>
+            <div className="settings"><SidebarElements className="settings" Icon={<SettingsIcon style={{fontSize:20}}/>} title="Settings" /></div>
+            <div className="report"><SidebarElements className="report" Icon={<FlagIcon style={{fontSize:20}}/>} title="Report History" /></div>
+            <div className="help"><SidebarElements className="help" Icon={<HelpIcon style={{fontSize:20}}/>} title="Help" /></div>           
+            <div className="feedback"><SidebarElements className="feedback" Icon={<FeedbackIcon style={{fontSize:20}}/>} title="Feedback" /></div>
+        </div>           
     )
 }

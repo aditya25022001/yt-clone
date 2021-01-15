@@ -11,7 +11,7 @@ function App() {
       </div>
       <div className="AppBody">
         <SideBar className="sidebar"/>
-        <Videos />
+        <Videos className="videos"/>
       </div>
     </body>
   );

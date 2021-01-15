@@ -3,63 +3,71 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 200px;
     background-color: rgb(39, 38, 38);
-    padding-left: 10px;
-    margin-top: 5px;
     font-size: 15px;
     font-weight: bolder;
-    height: 730px;
-    flex:0.2;
+    flex:0.16;
+    padding-top: 15px;
+    cursor: pointer;
+    height: fit-content;
+    overflow-y:hidden;
 }
-.settings:hover, .report:hover, .help:hover, .feedback:hover, .home:hover, .trending:hover, .subscriptions:hover, .library:hover, .history:hover, .your-videos:hover, .liked-videos:hover, .watch-later:hover, .show-more:hover, .yt-premium:hover, .movies:hover, .gaming:hover, .live:hover, .learning:hover{
-    background-color: rgb(71, 71, 71);
-}
-.settings, .report, .help, .feedback, .home, .trending, .subscriptions, .library, .history, .your-videos, .liked-videos, .watch-later, .show-more, .yt-premium, .movies, .gaming, .live, .learning{
-    color: whitesmoke;
-    margin-left:  -10px;
-    padding-left: 23px;
-    width: 220px;
+.elements{
     display: flex;
     flex-direction: row;
+    font-weight: 500;
+    color: white;
     justify-content: flex-start;
-    height: 35px;
-    padding-top: 5px;
+    align-items: center;
+    padding:6px 10px 6px 24px;
+}
+.elements:hover{
+    background-color: rgb(85, 83, 83);
 }
 .icon{
-    margin-right: 20px;
-    margin-bottom: 2px;
+    color: rgb(128, 128, 128);
+    margin-right: 22px;
 }
-.home{
-    background-color: rgb(71, 71, 71);
-    margin-top: 13px;
-    padding-top: 10px;
+.label{
+    padding-bottom: 4px;
 }
-.subscriptions{
-    margin-bottom: 13px;
+.sidebar:hover{
+    overflow-y:scroll ;
 }
-.library{
-    margin-top: 13px;
+.sidebar::-webkit-scrollbar{
+    width:5px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background: rgb(97, 97, 97);
+}
+.sidebar::-webkit-scrollbar-track{
+    background: none;
+}
+.sidebar:hover{
+    overflow-y: scroll;
 }
 .subscribed{
     color:rgb(128, 128, 128);
     text-align: left;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-left: 24px;
     font-size: 15px;
-}
-.show-more{
-    padding-bottom: 20px;
 }
 .more{
     color: rgb(128,128,128);
     margin:10px;
+    margin-left: 24px;
+    margin-top: -10px;
 }
 .hrline{
-    width: 240px;
     height: 0.1px;
-    margin-left: -10px;
     background-color: rgb(71, 71, 71);
-    color: rgb(71,71,71);
+    margin-top:15px ;
+    margin-bottom: 25px;
+}
+.home{
+    background-color: rgb(59, 59, 59);
+}
+#iconHome{
+    color: white;
 }

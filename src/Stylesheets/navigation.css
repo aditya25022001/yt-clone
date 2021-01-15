@@ -10,10 +10,6 @@
     align-items: center;
     padding-left: 24px;
     padding-right: 24px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    opacity: 0.99;
   }
   .goto{
     background-color: rgb(39, 38, 38);
