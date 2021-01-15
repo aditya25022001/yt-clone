@@ -16,43 +16,26 @@ export const Navigation = () => {
             
             
             <div className="goto">
-                <div className="menu">
-                    <MenuIcon style={{color:"white"}} />
-                </div>
-                <div className="logo">
-                    <YouTubeIcon className="yt-icon" style={{ fontSize:30 }} />
-                </div>
-                <div className="yt-icon-label">YouTube<sup className="india">IN</sup>
+                <MenuIcon style={{color:"white"}} />
+                <YouTubeIcon className="yt-icon" style={{ fontSize:30, paddingLeft:22, color:'red', objectFit:"contain"}} />
+                <div className="yt-icon-label">YouTube<sup className="india" style={{fontSize:10, color:"rgb(140, 140, 140)"}}>IN</sup>
                 </div>
             </div>
             
-            
             <div className="search-bar">
-                <div className="textarea">
-                    <input className="search" placeholder="Search"></input>
+                <input className="search" placeholder="Search"></input>
+                <div className="search__icon" style={{ backgroundColor:"rgb(70,69,69)" , height:31, display:'flex', alignItems:'center'}}>
+                    <SearchIcon className="lens" style={{fontSize:18}} />
                 </div>
-                <div className="search-lens">
-                    <SearchIcon className="lens" style={{fontSize: 20, color: "rgb(140, 140, 140)"}} />
-                </div>
-                <div className="mic">
-                    <MicIcon style={{color:"white"}} />
-                </div>
+                <MicIcon style={{color:"white", marginLeft:10}} />
             </div>
             
             
             <div className="accessories">
-                <div className="add-video">
-                    <VideoCallIcon style={{color:"white"}} />
-                </div>
-                <div className="yt-apps">
-                    <AppsIcon style={{color:"white"}} />
-                </div>
-                <div className="bell-icon">
-                    <NotificationsIcon style={{color:"white"}} />
-                </div>
-                <div className="profile">
-                    <AccountCircleIcon style={{color:"white", fontSize:40}} />
-                </div>
+                <VideoCallIcon style={{color:"white"}} />
+                <AppsIcon style={{color:"white"}} />
+                <NotificationsIcon style={{color:"white"}} />
+                <AccountCircleIcon style={{color:"white", fontSize:40}} />
             </div>
         </div>
     )

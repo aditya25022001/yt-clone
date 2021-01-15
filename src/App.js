@@ -1,6 +1,7 @@
 import './App.css';
 import { Navigation } from './components/Navigation';
 import { SideBar } from './components/SideBar';
+import { Videos } from './components/Videos';
 
 function App() {
   return (
@@ -8,8 +9,9 @@ function App() {
       <div className="AppHeader">
         <Navigation />
       </div>
-      <div className="AppSidebar">
-        <SideBar />
+      <div className="AppBody">
+        <SideBar className="sidebar"/>
+        <Videos />
       </div>
     </body>
   );

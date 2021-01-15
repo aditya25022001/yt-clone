@@ -10,6 +10,7 @@
     font-size: 15px;
     font-weight: bolder;
     height: 730px;
+    flex:0.2;
 }
 .settings:hover, .report:hover, .help:hover, .feedback:hover, .home:hover, .trending:hover, .subscriptions:hover, .library:hover, .history:hover, .your-videos:hover, .liked-videos:hover, .watch-later:hover, .show-more:hover, .yt-premium:hover, .movies:hover, .gaming:hover, .live:hover, .learning:hover{
     background-color: rgb(71, 71, 71);

@@ -10,3 +10,16 @@ body{
   text-align: center;
   background-color: rgb(39, 38, 38);
 }
+.AppHeader{
+  position: sticky;
+  top: 0;
+  opacity: 0.99;
+  z-index: 100;
+}
+.AppBody{
+  display: flex;
+  flex-direction: row;
+}
+.sidebar{
+  flex: 0.2;
+}
