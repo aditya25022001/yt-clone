@@ -56,3 +56,6 @@
     justify-content: space-between;
     padding-top: 6px;
   }
+  .search:focus{
+    border: 0.5px rgb(17, 123, 223) ridge;
+  }

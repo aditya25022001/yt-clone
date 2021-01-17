@@ -1,33 +1,41 @@
 .videos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex:0.84;
     cursor: pointer;
     color: white;
     background-color: rgb(31, 28, 28);
     padding: 10px;
     position: relative;
+    flex-wrap: wrap;
 }
-.whole{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.about{
+.videoCard{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 13px;
+    justify-content: flex-start;
+    margin: 15px 0px 55px 15px;
+    height: 250px;
+    align-items: flex-start;
+}
+.video__thumbnail{
+    width: 296px;
+    height: 190px;
+    border: none;
+    outline: none;
+}
+.video__info{
+    margin-top: 10px;
+    display: flex;
+}
+.video__title{
+    font-size: 15px;
     font-weight: 600;
 }
-.views-when{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: rgb(119, 118, 118);
-    font-weight: 400;
+.channel__name, .video__details{
+    color:rgb(141, 137, 137);
+    font-size: 14px;
+    font-weight: 500;
 }
-.acc-Image{
-    font-size: 10px;
+.channel__name:hover{
+    color:white;
 }
