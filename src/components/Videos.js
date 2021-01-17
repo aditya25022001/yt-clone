@@ -3,60 +3,8 @@ import '../Stylesheets/Videos.css';
 
 export const Videos = () => {
     return (
-        <div className="videos">
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
-            <div>Hello i am Videos</div>
+        <div className="videos"> 
+            <h1>Hello I am videos</h1>
         </div>
     )
 }

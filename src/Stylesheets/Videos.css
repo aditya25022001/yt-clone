@@ -1,8 +1,33 @@
 .videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex:0.84;
     cursor: pointer;
     color: white;
     background-color: rgb(31, 28, 28);
     padding: 10px;
     position: relative;
+}
+.whole{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 600;
+}
+.views-when{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(119, 118, 118);
+    font-weight: 400;
+}
+.acc-Image{
+    font-size: 10px;
 }

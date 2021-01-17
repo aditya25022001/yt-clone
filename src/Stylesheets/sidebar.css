@@ -8,7 +8,6 @@
     font-weight: bolder;
     flex:0.16;
     padding-top: 15px;
-    cursor: pointer;
     height: fit-content;
     overflow-y:hidden;
 }
@@ -17,12 +16,19 @@
     flex-direction: row;
     font-weight: 500;
     color: white;
+    cursor: pointer;
     justify-content: flex-start;
     align-items: center;
     padding:6px 10px 6px 24px;
 }
 .elements:hover{
     background-color: rgb(85, 83, 83);
+}
+.elements:hover>.icon{
+    color: white;
+}
+.elements:hover>.label{
+    font-weight: 600;
 }
 .icon{
     color: rgb(128, 128, 128);
@@ -52,6 +58,7 @@
     margin-top: -10px;
     margin-left: 24px;
     font-size: 15px;
+    cursor: text;
 }
 .more{
     color: rgb(128,128,128);
