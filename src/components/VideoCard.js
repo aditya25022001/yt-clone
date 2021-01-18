@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
+import '../Stylesheets/Videos.css';
 
 export const VideoCard = ({videoThumbnail, channelImage, title, channelName, views, timeStamp}) => {
     return (
@@ -15,7 +16,9 @@ export const VideoCard = ({videoThumbnail, channelImage, title, channelName, vie
                         {channelName}
                     </div>
                     <div className="video__details">
-                        {views} . {timeStamp}
+                        <div>{views}</div>
+                        <div className="dot"><sup>.</sup></div>
+                        <div>{timeStamp}</div>
                     </div>
                 </div>
             </div>

@@ -38,3 +38,14 @@
 .channel__name:hover{
     color:white;
 }
+.video__details{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dot{
+    font-weight: bold;
+    font-size: 30px;
+}
