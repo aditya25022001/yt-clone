@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); 
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     padding-bottom: 4px;
 }
 .sidebar:hover{
-    overflow-y:scroll ;
+    overflow:scroll ;
 }
 .sidebar::-webkit-scrollbar{
     width:5px;
@@ -47,9 +47,6 @@
 }
 .sidebar::-webkit-scrollbar-track{
     background: none;
-}
-.sidebar:hover{
-    overflow-y: scroll;
 }
 .subscribed{
     color:rgb(128, 128, 128);
