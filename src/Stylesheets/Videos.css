@@ -1,12 +1,11 @@
 .videos{
     display: flex;
     justify-content: flex-start;
-    flex:0.84;
+    flex:0.865;
     cursor: pointer;
     color: white;
     background-color: rgb(31, 28, 28);
     padding: 10px;
-    position: relative;
     flex-wrap: wrap;
 }
 .videoCard{
@@ -14,11 +13,11 @@
     flex-direction: column;
     justify-content: flex-start;
     margin: 15px 0px 55px 15px;
-    height: 250px;
+    height: 251px;
     align-items: flex-start;
 }
 .video__thumbnail{
-    width: 296px;
+    width: 298px;
     height: 190px;
     border: none;
     outline: none;

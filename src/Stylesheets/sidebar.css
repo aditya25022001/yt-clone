@@ -9,7 +9,6 @@
     flex:0.16;
     padding-top: 15px;
     height: fit-content;
-    overflow-y:hidden;
 }
 .elements{
     display: flex;
@@ -44,7 +43,7 @@
     width:5px;
 }
 .sidebar::-webkit-scrollbar-thumb{
-    background: rgb(97, 97, 97);
+    color: rgb(97, 97, 97);
 }
 .sidebar::-webkit-scrollbar-track{
     background: none;
