@@ -1,9 +1,4 @@
-@media only screen and (max-width: 600px){
-  .sidebar{
-    display: none;
-  }
-} 
-*{
+ *{
   margin: 0;
 }
 body{
@@ -12,7 +7,6 @@ body{
 .App {
   display: flex;
   flex-direction: column;
-  text-align: center;
   background-color: rgb(39, 38, 38);
 }
 .AppHeader{
@@ -25,4 +19,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+.AppVideos, .AppSearchPage{
+  background-color: rgb(31, 28, 28);
 }
