@@ -13,8 +13,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 export const Navigation = () => {
     return (
         <div className="navigation">
-            
-            
             <div className="goto">
                 <MenuIcon style={{color:"white"}} />
                 <YouTubeIcon className="yt-icon" style={{ fontSize:30, paddingLeft:22, color:'red', objectFit:"contain"}} />

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');*/
 .navigation{
     background-color: rgb(39, 38, 38);
     display: flex;
@@ -35,7 +36,7 @@
     height: 27px;
     background-color:rgb(25, 25, 26);
     outline: none;
-    width: 70vh;
+    width: 30vmax;
     color: white;
     border: 1px rgb(70, 69, 69) ridge;
     padding-left: 10px;

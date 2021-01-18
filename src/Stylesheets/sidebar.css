@@ -36,9 +36,6 @@
 .label{
     padding-bottom: 4px;
 }
-.sidebar:hover{
-    overflow:scroll ;
-}
 .sidebar::-webkit-scrollbar{
     width:5px;
 }
