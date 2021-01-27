@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Stylesheets/sidebar.css';
 
-export const SidebarElements = ( {Icon, title} ) => {
+export const Elements = ( {Icon, title} ) => {
     var id = "icon"+title;
     return (
         <div className="elements">

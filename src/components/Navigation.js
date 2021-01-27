@@ -10,6 +10,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
+import { Dropdown } from './Dropdown';
 
 export const Navigation = () => {
      
@@ -42,7 +43,9 @@ export const Navigation = () => {
                 <VideoCallIcon style={{color:"white"}} />
                 <AppsIcon style={{color:"white"}} />
                 <NotificationsIcon style={{color:"white"}} />
-                <AccountCircleIcon style={{color:"white", fontSize:40}} />
+                <Link to="/hello">
+                    <AccountCircleIcon style={{color:"white", fontSize:40}}/>
+                </Link>
             </div>
         </div>
     )
