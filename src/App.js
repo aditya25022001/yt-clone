@@ -10,25 +10,34 @@ function App() {
   return (
     <div className="App">
       <Router>
+        
         <div className="AppHeader">
           <Navigation className="AppNavigation" />
         </div>
+        
         <Switch>
+          
           <Route path="/search/:searchTerm">
             <div className="AppBody">
               <SideBar className="AppSidebar"/>
               <SearchPage className="AppSearchPage"/>
             </div>
           </Route>
+          
           <Route path="/hello">
             <Dropdown />
           </Route>
+          
           <Route path="/">
             <div className="AppBody">
               <SideBar className="AppSidebar"/>
               <Videos className="AppVideos"/>
             </div>
           </Route>  
+        
+        <Route path="/watch/:searchTerm">
+
+        </Route>
         </Switch>
       </Router>
     </div>
