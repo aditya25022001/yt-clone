@@ -1,3 +1,69 @@
-.videoNo{
-    width: 200px;
+.main-page{
+    display:flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 35px;
+    background-color: rgb(26, 26, 26);
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.main-video{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    padding-top: 11px;
+}
+.sideVideos{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+.video-thumbnail-main{
+    width: 1030px;
+}
+.views-when{
+    flex: 0.4;
+}
+.more-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(158, 156, 156);
+}
+.title-details{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.likes-dislikes{
+    display: flex;
+    flex:0.35;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.hrline{
+    height: 0.5px;
+    background-color: rgb(65, 64, 64);
+    margin-bottom: 20px;
+}
+.channel{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subs{
+    background-color: rgb(204, 31, 31);
+    border: none;
+    outline: none;
+    outline-offset: none;
+    color: white;
+    padding: 12px 15px 10px 15px;
+    font-weight: 600;
+    border-radius: 2px;
 }

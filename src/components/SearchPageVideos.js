@@ -1,7 +1,6 @@
 import React from 'react'
 import '../Stylesheets/searchPage.css';
 import Avatar from '@material-ui/core/Avatar';
-import { rgbToHex } from '@material-ui/core';
 
 export const SearchPageVideos = ({ thumbnail, title, views, when, channelImage, channelName, details }) => {
     return (
