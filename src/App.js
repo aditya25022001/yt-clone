@@ -41,6 +41,7 @@ function App() {
               channelNameMain="AdiFitness"
               channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
               subscribers="1.3M"
+              totalComments="5"
             />  
           </Route>
 

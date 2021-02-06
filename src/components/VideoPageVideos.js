@@ -10,7 +10,7 @@ export const VideoPageVideos = ({ thumbnail, title, views, when, channelName}) =
                 <div className="channelInfo">{channelName}</div>
                 <div className="views_when">
                     <div>{views}</div>
-                    <div><sup>.</sup></div>
+                    <div><sup style={{ marginLeft:10, marginRight:10, fontWeight:800 }}>.</sup></div>
                     <div>{when}</div>
                 </div>
             </div>

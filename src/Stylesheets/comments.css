@@ -56,3 +56,15 @@
 .when-comment:hover{
     color:white;
 }
+.comment-heading{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 10px 0px 35px 10px ;
+    align-items: center;
+}
+.sort, .sortby{
+    font-size: 14px;
+    color: rgb(155, 153, 153);
+    font-weight: 650;
+}

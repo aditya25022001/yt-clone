@@ -14,7 +14,7 @@ export const SearchPage = () => {
             <div className="searchPageVideos">
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -23,7 +23,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -32,7 +32,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -41,7 +41,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -50,7 +50,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -59,7 +59,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -68,7 +68,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -77,7 +77,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -86,7 +86,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -95,7 +95,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -104,7 +104,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -113,7 +113,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -122,7 +122,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -131,7 +131,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -140,7 +140,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
@@ -149,7 +149,7 @@ export const SearchPage = () => {
                 />
                 <SearchPageVideos 
                     thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    title="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
                     views="2.3 M views"
                     when="5 days ago"
                     channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"

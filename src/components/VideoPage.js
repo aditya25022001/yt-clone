@@ -10,10 +10,8 @@ import { Avatar } from '@material-ui/core';
 import { Comments } from './Comments';
 import SortIcon from '@material-ui/icons/Sort';
 
-export const VideoPage = ({ thumbnailMain, titleMain, details, viewsMain, whenMain, likes, dislikes, channelNameMain, channelImage, subscribers }) => {
-
+export const VideoPage = ({ thumbnailMain, titleMain, details, viewsMain, whenMain, likes, dislikes, channelNameMain, channelImage, subscribers, totalComments }) => {
     const [state, setstate] = useState('SUBSCRIBE');
-
     return (
         <div className="main-page">
             <div className="main-video">
@@ -30,7 +28,7 @@ export const VideoPage = ({ thumbnailMain, titleMain, details, viewsMain, whenMa
                         <div><ThumbDownAltIcon /><sup style={{marginLeft:5}}>{dislikes}</sup></div>
                         <div><ShareIcon /><sup style={{marginLeft:5}}>SHARE</sup></div>
                         <div><PlaylistAddIcon /><sup style={{marginLeft:5}}>SAVE</sup></div>
-                        <div><MoreHorizIcon /></div>
+                        <div className="more-main"><MoreHorizIcon /></div>
                     </div>
                 </div>
                 <div className="hrline"></div>
@@ -46,8 +44,18 @@ export const VideoPage = ({ thumbnailMain, titleMain, details, viewsMain, whenMa
                 </div>
                 <div className="hrline"></div>
                 <div className="comment-heading">
-
+                    <div className="total" style={{ marginRight:40 }}>{totalComments} Comments</div>
+                    <div className="sort"><SortIcon /></div>
+                    <div className="sortby">SORT BY</div>
                 </div>
+                <Comments 
+                    accountImage="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg"
+                    accountName="Fitness Freak"
+                    when="2 months ago"
+                    content="worth watching Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                    likes="28"
+                    dislikes="5"
+                />
                 <Comments 
                     accountImage="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg"
                     accountName="Fitness Freak"

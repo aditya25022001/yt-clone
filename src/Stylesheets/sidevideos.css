@@ -5,11 +5,21 @@
 .video__template{
     font-size: 14px;
     margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
 }
 .video_info{
     display: flex;
     flex-direction: column;
+    color: rgb(150, 150, 150);
+    margin-left: 10px;
+    font-weight: 500;
 }
 .channelInfo:hover{
     color:white;
+}
+.views_when{
+    display: flex;
+    flex-direction: row;
 }

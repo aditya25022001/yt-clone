@@ -6,20 +6,21 @@
     background-color: rgb(26, 26, 26);
     justify-content: flex-start;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 .main-video{
     display: flex;
     flex-direction: column;
-    flex: 0.5;
+    flex: 0.7;
     padding-top: 11px;
 }
 .sideVideos{
     display: flex;
     flex-direction: column;
-    flex: 0.5;
+    flex: 0.3;
 }
 .video-thumbnail-main{
-    width: 1030px;
+    width: 100%;
 }
 .views-when{
     flex: 0.4;
@@ -66,4 +67,7 @@
     padding: 12px 15px 10px 15px;
     font-weight: 600;
     border-radius: 2px;
+}
+.more-main:hover{
+    color:white;
 }
