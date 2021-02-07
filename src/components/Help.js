@@ -5,6 +5,7 @@ import FeedbackIcon from '@material-ui/icons/Feedback';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import SearchIcon from '@material-ui/icons/Search';
 import '../Stylesheets/help.css'
+import { Link } from 'react-router-dom';
 
 export const Help = () => {
     return (
@@ -12,14 +13,17 @@ export const Help = () => {
             <div className="help_heading">
                 <div className="help_header">
                     <div>Help</div>
-                    <div><CloseIcon /></div>
+                    <div>
+                        <Link to="/" style={{  textDecoration:'none', color:'white'}}>
+                            <CloseIcon />
+                        </Link>
+                    </div>
                 </div>
                 <div className="help_input">
                     <div className="lens_help"><SearchIcon style={{ fontSize:25,color:'black'}} /></div>
                     <input className="input_help" autoFocus="true" type="text" placeholder="Search help"/>
                 </div>
             </div>
-            <div className="hello">
             <div className="help_reference" >
                 <div className="help_ref_heading">Popular help resources</div>
                 <div className="help_count">
@@ -54,11 +58,12 @@ export const Help = () => {
             <div className="hrline_help"></div>
             <div className="help_last_part">
                 <div className="contact_us">Contact us</div>
-                <div className="help_send_feedback">
-                    <div><FeedbackIcon style={{ color:'rgb(0,103,199)', marginRight:30 }} /></div>
-                    <div>Send feedback</div>
-                </div>
-            </div>
+                <Link to="/feedback" style={{ textDecoration:'none', color:'black' }}>
+                    <div className="help_send_feedback">
+                        <div><FeedbackIcon style={{ color:'rgb(0,103,199)', marginRight:30, paddingTop:5}} /></div>
+                        <div>Send feedback</div>
+                    </div>
+                </Link>
             </div>
         </div>
     )

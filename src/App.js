@@ -58,7 +58,13 @@ function App() {
           </Route>
 
           <Route path="/help">
-            <Help />
+            <div className="AppBody_help">
+              <SideBar className="AppSidebar"/>
+              <Videos className="AppVideos"/>
+            </div>
+            <div className="help_box">
+              <Help className="help_box_main" />
+            </div>
           </Route>
 
           <Route path="/">

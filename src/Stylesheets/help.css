@@ -4,12 +4,14 @@
     justify-content: flex-start;
     bottom: 0;
     right: 0;
+    position: fixed;
     margin-right: 10px;
     position: fixed;
     color: white;
     width: 24%;
-    height: 87%;
+    height: 88%;
     font-family: sans-serif;
+    cursor: pointer;
 }
 .help_heading{
     border-top-left-radius: 8px;
@@ -61,7 +63,8 @@
 .help_count{
     display: flex;
     flex-direction: row;
-    padding:9px 15px 15px 15px;
+    padding:9px 15px 0 15px;
+    height: 30%;
 }
 .help_ref_heading{
     color: gray;
@@ -75,9 +78,6 @@
     padding-bottom: 15px;
     width: 100%;
     border-bottom: 0.5px ridge rgb(187, 185, 185);
-}
-.hello{
-    overflow-y: scroll;
 }
 .all_articles, .help_forum{
     display: flex;
@@ -95,14 +95,14 @@
 .hrline_help{
     width: 100%;
     height: 1%;
-    background-color: rgb(231, 231, 231);
+    background-color: rgba(231, 231, 231, 0.87);
 }
 .help_last_part{
     background-color: #fff;
     color: black;
     display: flex;
+    width: 100%;
     flex-direction: column;
-    padding-left: 15px;
     padding-top: 15px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -112,11 +112,28 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    padding-bottom: 18px;
+    padding: 10px 15px 10px 25px;
 }
 .contact_us{
     font-weight: 600;
     color: gray;
     font-size: 14px;
-    padding-bottom: 25px;
+    padding-bottom: 18px;
+    padding-top: 5px;
+    padding-left: 25px;
+}
+.help_send_feedback:hover{
+    background-color: rgb(228, 228, 228);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 89.3%;
+}
+.help_count:hover{
+    background-color: rgb(228,228,228);
+}
+#help_count_five:hover{
+    background-color: rgb(228, 228, 228);
+}
+.help_forum:hover, .all_articles:hover{
+    background-color: rgb(228, 228, 228);
 }

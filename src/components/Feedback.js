@@ -13,7 +13,7 @@ export const Feedback = () => {
                 placeholder="Have feedback? We'd love to hear it, but please dont share sensitive information. Have questions? Try help or support."
             />
             <div className="feedback_screenshot">
-                <input type="checkbox" value="true" style={{ width:18, height:18, marginRight:10 }} />Include screenshot
+                <input type="checkbox" style={{ width:18, height:18, marginRight:10 }} />Include screenshot
             </div>
             <div className="feedback_input_screenshot">
                 <div className="drag_and_drop">
