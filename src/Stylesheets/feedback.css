@@ -1,0 +1,89 @@
+.feedback_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.feedback_heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-size: 19px;
+    font-family:sans-serif;
+    align-items: center;
+    background-color: rgb(77, 105, 116);
+    width: 23%;
+    height: 50px;
+}
+.feedback_input{
+    width: 22.5%;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 110px;
+    border: none;
+    outline: none;
+    outline-offset: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    resize: none; /*learnt new*/
+}
+.feedback_screenshot{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    background-color:whitesmoke;
+    width: 23%;
+    padding:15px 0 15px 10px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.feedback_input_screenshot{
+    background: url('https://www.lifewire.com/thmb/GFJuhroSzUD7305uLp3vvQgyCic=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/youtube-screenshot-677b911c8c3a4f82aa210d3a2b283437.jpg');
+    width: 23.6%;
+    background-size: contain; /*learnt new*/
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drag_and_drop{
+    background-color: rgb(179, 175, 175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 60%;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+.icon{
+    color: rgb(49, 47, 47);
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.drag_and_drop:hover{
+    opacity: 0.8;
+    background-color: rgb(230, 230, 230);
+}
+.drag_and_drop:hover>.icon{
+    color: rgb(0, 129, 235);
+}
+.drag_and_drop:hover>.drag_text{
+    color: rgb(0, 129, 235);
+}
+.drag_text{
+    color:rgb(49,47,47);
+    font-family:sans-serif;
+    font-size:15px;
+    margin-top:10px;
+}

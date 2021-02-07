@@ -5,6 +5,7 @@ import { Videos } from './components/Videos';
 import { SearchPage } from './components/SearchPage';
 import { Dropdown } from './components/Dropdown';
 import { VideoPage } from './components/VideoPage';
+import { Feedback } from './components/Feedback';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -45,12 +46,17 @@ function App() {
             />  
           </Route>
 
+          <Route path="/feedback">
+            <Feedback />
+          </Route>
+
           <Route path="/">
             <div className="AppBody">
               <SideBar className="AppSidebar"/>
               <Videos className="AppVideos"/>
             </div>
           </Route>  
+
 
         </Switch>
       </Router>

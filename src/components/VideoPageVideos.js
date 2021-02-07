@@ -1,12 +1,17 @@
 import React from 'react'
 import '../Stylesheets/sidevideos.css';
+import { Link } from 'react-router-dom';
 
 export const VideoPageVideos = ({ thumbnail, title, views, when, channelName}) => {
     return (
         <div className="video__template">
-            <img className="video_thumbnail" src={thumbnail}></img>
+            <Link to="/watch" style={{ textDecoration:'none' }}>
+                <img className="video_thumbnail" src={thumbnail}></img>
+            </Link>
             <div className="video_info">
-                <div style={{color:"white", fontWeight:600}}>{title}</div>
+                <Link to="/watch" style={{ textDecoration:'none' }}>
+                    <div style={{color:"white", fontWeight:600}}>{title}</div>
+                </Link>
                 <div className="channelInfo">{channelName}</div>
                 <div className="views_when">
                     <div>{views}</div>

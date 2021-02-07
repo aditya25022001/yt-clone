@@ -19,6 +19,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import FlagIcon from '@material-ui/icons/Flag';
 import HelpIcon from '@material-ui/icons/Help';
 import FeedbackIcon from '@material-ui/icons/Feedback';
+import { Link } from 'react-router-dom';
 
 export const SideBar = () => {
     return (
@@ -46,7 +47,9 @@ export const SideBar = () => {
             <div className="settings"><Elements className="settings" Icon={<SettingsIcon style={{fontSize:20}}/>} title="Settings" /></div>
             <div className="report"><Elements className="report" Icon={<FlagIcon style={{fontSize:20}}/>} title="Report History" /></div>
             <div className="help"><Elements className="help" Icon={<HelpIcon style={{fontSize:20}}/>} title="Help" /></div>           
-            <div className="feedback"><Elements className="feedback" Icon={<FeedbackIcon style={{fontSize:20}}/>} title="Feedback" /></div>
+            <Link to="/feedback" style={{textDecoration:'none'}}>
+                <div className="feedback"><Elements className="feedback" Icon={<FeedbackIcon style={{fontSize:20}}/>} title="Feedback" /></div>
+            </Link>
         </div>           
     )
 }
