@@ -6,6 +6,7 @@ import { SearchPage } from './components/SearchPage';
 import { Dropdown } from './components/Dropdown';
 import { VideoPage } from './components/VideoPage';
 import { Feedback } from './components/Feedback';
+import { Help } from './components/Help';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -47,7 +48,17 @@ function App() {
           </Route>
 
           <Route path="/feedback">
-            <Feedback />
+            <div className="AppBody_feedback">
+              <SideBar className="AppSidebar"/>
+              <Videos className="AppVideos"/>
+            </div>
+            <div className="feedback_box">
+              <Feedback className="feedback_box_main" />
+            </div>
+          </Route>
+
+          <Route path="/help">
+            <Help />
           </Route>
 
           <Route path="/">
@@ -56,7 +67,6 @@ function App() {
               <Videos className="AppVideos"/>
             </div>
           </Route>  
-
 
         </Switch>
       </Router>

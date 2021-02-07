@@ -20,6 +20,17 @@ body{
   flex-direction: row;
   justify-content: flex-start;
 }
+.AppBody_feedback{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  opacity: 0.5;
+  position: relative;
+}
 .AppVideos, .AppSearchPage{
   background-color: rgb(31, 28, 28);
+}
+.feedback_box{
+  margin-top: 120px;
+  position: absolute;
 }

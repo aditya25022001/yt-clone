@@ -6,6 +6,8 @@
     text-align: center;
     color: white;
     font-family: sans-serif;
+    cursor: pointer;
+    position: fixed;
 }
 .feedback_heading{
     display: flex;
@@ -64,18 +66,17 @@
     opacity: 0.8;
     border-radius: 6px;
 }
-.icon{
+.feedback_icon{
     color: rgb(49, 47, 47);
     align-items: center;
     text-align: center;
     font-size: 20px;
-    margin-left: 10px;
 }
 .drag_and_drop:hover{
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: rgb(230, 230, 230);
 }
-.drag_and_drop:hover>.icon{
+.drag_and_drop:hover>.feedback_icon{
     color: rgb(0, 129, 235);
 }
 .drag_and_drop:hover>.drag_text{
@@ -86,4 +87,38 @@
     font-family:sans-serif;
     font-size:15px;
     margin-top:10px;
+}
+.feedback_other{
+    width: 21.9%;
+    font-size: 12px;
+    color: gray;
+    padding: 15px 13px 16px 13px ;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.feedback_send_cancel{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 22%;
+    background-color: #fff;
+    border-top: 0.5px ridge rgb(209, 209, 209);
+    padding: 10px 15px 10px 10px;
+    font-size: 15px;
+}
+.feedback_cancel{
+    color: rgb(105, 105, 105);
+    margin-right: 20px;
+    padding: 8px;
+}
+.feedback_send{
+    padding: 8px;
+}
+.feedback_cancel:hover{
+    background-color: rgb(245, 241, 241);
+}
+.feedback_send:hover{
+    background-color: rgb(245,241,241);
 }
