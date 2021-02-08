@@ -1,0 +1,56 @@
+.report_container{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: rgb(29, 28, 28);
+    padding-top: 95px;
+    padding-left: 97px;
+}
+.report_div_one{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.report_content_heading{
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom:20px ;
+}
+.report_div_one_image{
+    width: 10px;
+}
+.report_content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0.7;
+    text-align: justify;
+}
+.image_report{
+    width: 290px;
+}
+.report_content_intro, .report_content_list{
+    color: rgb(189, 184, 184);
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: justify;
+}
+li{
+    margin-left: -25px;
+}
+.hrline_report{
+    height: 0.8px;
+    background-color: rgba(255, 255, 255, 0.185);
+    width: 90%;
+    margin-top: 40px;
+}
+.your_report{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 15px;
+}

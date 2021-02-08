@@ -7,6 +7,9 @@ import { Dropdown } from './components/Dropdown';
 import { VideoPage } from './components/VideoPage';
 import { Feedback } from './components/Feedback';
 import { Help } from './components/Help';
+import { Report } from './components/Report'
+import { SettingsSidebar } from './components/SettingsSidebar';
+import { SettingsAccount } from './components/SettingsAccount';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -62,9 +65,25 @@ function App() {
               <SideBar className="AppSidebar"/>
               <Videos className="AppVideos"/>
             </div>
-            <div className="help_box">
               <Help className="help_box_main" />
+          </Route>
+
+          <Route path="/report">
+            <div className="AppBody_report">
+              <div className="AppSidebar_report" ><SideBar/></div>
+              <Report />
             </div>
+          </Route>
+
+          <Route path="/settings/account">
+            <div className="settings_account">
+             <div className="sidebar_account" ><SettingsSidebar/></div> 
+             <div><SettingsAccount /></div> 
+            </div>
+          </Route>
+
+          <Route path="/settings">
+            <SettingsSidebar />
           </Route>
 
           <Route path="/">

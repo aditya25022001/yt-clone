@@ -45,3 +45,19 @@ body{
   margin-bottom: 0;
   padding-bottom: 0;
 }
+.AppBody_report{
+  display: flex;
+  flex-direction: row;
+}
+.AppSidebar_report{
+  width: 20%;
+}
+.settings_account{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(27, 25, 25);
+  height: 100%;
+}
+.sidebar_account{
+  flex: 0.4;
+}

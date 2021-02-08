@@ -45,8 +45,12 @@ export const SideBar = () => {
             <div className="learning"><Elements className="learning" Icon={<WbIncandescentIcon style={{fontSize:20}}/>} title="Learning" /></div>
             <div className="hrline"></div> 
             <div className="settings"><Elements className="settings" Icon={<SettingsIcon style={{fontSize:20}}/>} title="Settings" /></div>
-            <div className="report"><Elements className="report" Icon={<FlagIcon style={{fontSize:20}}/>} title="Report History" /></div>
-            <div className="help"><Elements className="help" Icon={<HelpIcon style={{fontSize:20}}/>} title="Help" /></div>           
+            <Link to="/report" style={{ textDecoration:'none' }}>
+                <div className="report"><Elements className="report" Icon={<FlagIcon style={{fontSize:20}}/>} title="Report History" /></div>
+            </Link>
+            <Link to="/help" style={{ textDecoration:'none' }}>
+                <div className="help"><Elements className="help" Icon={<HelpIcon style={{fontSize:20}}/>} title="Help" /></div>           
+            </Link>
             <Link to="/feedback" style={{textDecoration:'none'}}>
                 <div className="feedback"><Elements className="feedback" Icon={<FeedbackIcon style={{fontSize:20}}/>} title="Feedback" /></div>
             </Link>
