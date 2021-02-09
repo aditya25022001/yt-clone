@@ -77,9 +77,13 @@ function App() {
 
           <Route path="/settings/account">
             <div className="settings_account">
-             <div className="sidebar_account" ><SettingsSidebar/></div> 
-             <div><SettingsAccount /></div> 
-            </div>
+              <SettingsSidebar className="settings_sidebar_container" />
+              <SettingsAccount className="account_main_div"
+                  email="adityaubale63@gmail.com"
+                  name="Aditya Uday Ubale"
+                  chImage="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+              />
+            </div> 
           </Route>
 
           <Route path="/settings">
