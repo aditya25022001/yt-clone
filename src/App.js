@@ -11,6 +11,7 @@ import { Report } from './components/Report'
 import { SettingsSidebar } from './components/SettingsSidebar';
 import { SettingsAccount } from './components/SettingsAccount';
 import { SettingsNotification } from './components/SettingsNotification';
+import { Playback } from './components/Playback';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -86,6 +87,10 @@ function App() {
 
           <Route path="/settings/notifications">
             <SettingsNotification email="adityaubale63@gmail.com"/>
+          </Route>
+
+          <Route path="/settings/playback_and_performance">
+            <Playback />
           </Route>
 
           <Route path="/settings">

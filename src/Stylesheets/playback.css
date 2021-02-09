@@ -1,0 +1,17 @@
+.playback_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    padding-top: 50px;
+    padding-left: 8%;
+    font-family: sans-serif;
+}
+.hrline_playback{
+    width: 90%;
+    height: 0.4px;
+    background-color: rgb(63, 62, 62);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
