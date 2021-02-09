@@ -10,6 +10,7 @@ import { Help } from './components/Help';
 import { Report } from './components/Report'
 import { SettingsSidebar } from './components/SettingsSidebar';
 import { SettingsAccount } from './components/SettingsAccount';
+import { SettingsNotification } from './components/SettingsNotification';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -76,14 +77,15 @@ function App() {
           </Route>
 
           <Route path="/settings/account">
-            <div className="settings_account">
-              <SettingsSidebar className="settings_sidebar_container" />
               <SettingsAccount className="account_main_div"
                   email="adityaubale63@gmail.com"
                   name="Aditya Uday Ubale"
                   chImage="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
               />
-            </div> 
+          </Route>
+
+          <Route path="/settings/notifications">
+            <SettingsNotification email="adityaubale63@gmail.com"/>
           </Route>
 
           <Route path="/settings">

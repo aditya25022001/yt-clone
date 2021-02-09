@@ -2,11 +2,12 @@
     color: white;
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 40px;
     font-family: sans-serif;
     background-color: rgb(27, 25, 25);
     height: 100%;
-    padding-left: 132px;
+    padding-left: 100px;
+    text-align: left;
     flex: 0.82;
 }
 .hrline_account{

@@ -11,16 +11,6 @@ export const SettingsAccount = ({ email, name, chImage }) => {
                     <div style={{ fontWeight:500, fontSize:25, marginBottom:15 }}>Choose how you appear and what you see on YouTube</div>
                     <div style={{ color:'rgb(146,150,147)', fontWeight:300, fontSize:14 }}>Signed in as {email}</div>
                 </div>
-                <div className="account_search"><img 
-                    src="https://thumbs.dreamstime.com/b/emoticon-searching-mascot-vector-cartoon-illustration-emoticon-searching-mascot-vector-cartoon-illustration-original-113901025.jpg"
-                    style={{ 
-                        borderRadius:1000,
-                        width:150,
-                        height:150,
-                        marginLeft:250
-                    }}    
-                    ></img>
-                </div>
             </div>
             <div className="hrline_account"></div>
             <div className="account_div_two" style={{ display:'flex', flexDirection:'column' }}>

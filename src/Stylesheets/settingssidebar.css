@@ -1,31 +1,38 @@
 .settings_sidebar_container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    background-color: rgb(17, 16, 16);
-    flex: 0.18;
     color: white;
-    font-family: sans-serif;
-    cursor: pointer;
-    height: 100%;
-
+    padding-top: 10%;
 }
 #settings_sidebar_heading{
-    color: rgb(175, 172, 172);
-    font-weight: 500;
-    font-size: 15px;
+    background-color: rgb(56,56,56);
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 5px;
 }
 .settings_sidebar_elements{
-    padding: 22px 15px 18px 25px;
-    font-size: 15px;
-    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(56,56,56);
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 16.6%;
 }
-.settings_sidebar_elements:hover{
+#settings_sidebar_account, #settings_sidebar_privacy, #settings_sidebar_billing{
+    margin-left: 30%;
+}
+#settings_sidebar_notification, #settings_sidebar_conn_apps, #settings_sidebar_adv_settings{
+    margin-right: 30%;
+}
+#settings_sidebar_play_per{
+    background-color: rgb(56,56,56);
+    padding: 15px 25px 15px 25px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+#settings_sidebar_play_per:hover, .settings_sidebar_elements:hover{
     background-color: gray;
-}
-.settings_sidebar_elements_setting{
-    padding: 22px 15px 18px 25px;
-    font-size: 15px;
-    flex-wrap: wrap;
-
 }

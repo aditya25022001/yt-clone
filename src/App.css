@@ -51,22 +51,4 @@ body{
 }
 .AppSidebar_report{
   width: 20%;
-}   
-.settings_account{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 100%;
-  width: 100%;
-}
-.settings_sidebar_container{
-  flex: 0.18;
-  height: 100%;
-  position: absolute;
-}
-.account_main_div{
-  flex: 0.82;
-  margin-left: 20%;
-  position: static;
-  height: 100%;
 }
