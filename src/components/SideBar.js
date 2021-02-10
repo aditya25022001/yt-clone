@@ -43,8 +43,10 @@ export const SideBar = () => {
             <div className="gaming"><Elements className="gaming" Icon={<SportsEsportsIcon style={{fontSize:20}}/>} title="Gaming" /></div>
             <div className="live"><Elements className="live" Icon={<LiveTvIcon style={{fontSize:20}}/>} title="Live" /></div>
             <div className="learning"><Elements className="learning" Icon={<WbIncandescentIcon style={{fontSize:20}}/>} title="Learning" /></div>
-            <div className="hrline"></div> 
-            <div className="settings"><Elements className="settings" Icon={<SettingsIcon style={{fontSize:20}}/>} title="Settings" /></div>
+            <div className="hrline"></div>
+            <Link to="/settings" style={{ textDecoration:'none' }}>
+                <div className="settings"><Elements className="settings" Icon={<SettingsIcon style={{fontSize:20}}/>} title="Settings" /></div>
+            </Link>
             <Link to="/report" style={{ textDecoration:'none' }}>
                 <div className="report"><Elements className="report" Icon={<FlagIcon style={{fontSize:20}}/>} title="Report History" /></div>
             </Link>

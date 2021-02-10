@@ -1,15 +1,21 @@
 import React from 'react'
-import '../Stylesheets/settingAccount.css';
+import '../Stylesheets/account.css';
 import Avatar from '@material-ui/core/Avatar';
+import { Link } from 'react-router-dom';
 
-export const SettingsAccount = ({ email, name, chImage }) => {
+export const Account = ({ email, name, chImage }) => {
     return (
         <div className="account_main_div">
-            <div className="account_div_one" style={{ display:'flex', flexDirection:'row', alignItems:'center' }}>
+            <div className="account_div_one" style={{ display:'flex', flexDirection:'row', alignItems:'center', width:'90%', justifyContent:'space-between' }}>
                 <div className="div_one_content_account">
-                    <div style={{ fontWeight:500, marginBottom:30 }}>Account</div>
+                    <div style={{ fontWeight:550, marginBottom:30, fontSize:18 }}>Account</div>
                     <div style={{ fontWeight:500, fontSize:25, marginBottom:15 }}>Choose how you appear and what you see on YouTube</div>
                     <div style={{ color:'rgb(146,150,147)', fontWeight:300, fontSize:14 }}>Signed in as {email}</div>
+                </div>
+                <div className="settings_icon_account">
+                <Link to="/settings" style={{ textDecoration:'none', color:'white' }}>
+                    SETTINGS
+                </Link>
                 </div>
             </div>
             <div className="hrline_account"></div>

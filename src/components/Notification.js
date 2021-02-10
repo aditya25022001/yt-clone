@@ -1,25 +1,22 @@
 import React from 'react'
 import { NotificationElement } from './NotificationElement';
 import '../Stylesheets/notifications.css';
+import { Link } from 'react-router-dom';
  
-export const SettingsNotification = ({ email }) => {
+export const Notification = ({ email }) => {
     return (
         <div className="settings_notification">
-            <div className="notifications_notification" style={{ display:'flex', flexDirection:'row'}}>
+            <div className="notifications_notification" style={{ display:'flex', flexDirection:'row', width:'90%', justifyContent:'space-between'}}>
                 <div className="part_one_notification">
-                    <div style={{ fontWeight:550, fontSize:17 }}>Notifications</div>
+                    <div style={{ fontWeight:550, fontSize:18 }}>Notifications</div>
                     <div style={{ fontWeight:500, marginTop:25, fontSize:25 }}>Choose how and when to be notified</div>
                     <div style={{ color:'gray', fontSize:14, marginTop:15 }}>Select push and email notifications you'd like to receive</div>
                 </div>
-                {/* <div><img 
-                    src="https://www.pngitem.com/pimgs/m/494-4949849_email-clipart-envelopeclip-envelope-icon-hd-png-download.png" 
-                    style={{ 
-                        borderRadius:100, 
-                        width:150, 
-                        height:150 
-                    }} 
-                    />
-                </div> */}
+                <div>
+                    <Link className='settings_icon_notification' to="/settings" style={{ textDecoration:'none', color:'white' }}>
+                        SETTINGS
+                    </Link>
+                </div>
             </div>
             <div className="hrline_notif"></div>
             <div className="notification_general" style={{ display:'flex', flexDirection:"column", justifyContent:'space-evenly'}}>

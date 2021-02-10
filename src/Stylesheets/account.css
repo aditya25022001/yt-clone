@@ -36,3 +36,16 @@
 .account_div_three_four{
     margin-top: 50px;
 }
+.settings_icon_account{
+    text-align: center;
+    height: max-content;
+    padding: 20px 30px 20px 30px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.settings_icon_account:hover{
+    background-color: gray;
+    transition: all;
+    transition-duration: 0.5s;
+}

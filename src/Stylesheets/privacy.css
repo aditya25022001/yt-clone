@@ -1,0 +1,27 @@
+.main_privacy{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    padding-left: 8%;
+    padding-top: 3%;
+}
+.hrline_privacy{
+    height:0.5px;
+    background-color: rgb(66, 65, 65);
+    margin-bottom: 2%;
+    width: 90%;
+}
+.settings_icon_privacy{
+    text-align: center;
+    height: max-content;
+    padding: 20px 30px 20px 30px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.settings_icon_privacy:hover{
+    background-color: gray;
+    transition: all;
+    transition-duration: 0.5s;
+}

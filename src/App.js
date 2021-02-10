@@ -8,9 +8,9 @@ import { VideoPage } from './components/VideoPage';
 import { Feedback } from './components/Feedback';
 import { Help } from './components/Help';
 import { Report } from './components/Report'
-import { SettingsSidebar } from './components/SettingsSidebar';
-import { SettingsAccount } from './components/SettingsAccount';
-import { SettingsNotification } from './components/SettingsNotification';
+import { Settings } from './components/Settings';
+import { Account } from './components/Account';
+import { Notification } from './components/Notification';
 import { Playback } from './components/Playback';
 import { Privacy } from './components/Privacy';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -79,7 +79,7 @@ function App() {
           </Route>
 
           <Route path="/settings/account">
-              <SettingsAccount className="account_main_div"
+              <Account className="account_main_div"
                   email="adityaubale63@gmail.com"
                   name="Aditya Uday Ubale"
                   chImage="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
@@ -87,7 +87,7 @@ function App() {
           </Route>
 
           <Route path="/settings/notifications">
-            <SettingsNotification email="adityaubale63@gmail.com"/>
+            <Notification email="adityaubale63@gmail.com"/>
           </Route>
 
           <Route path="/settings/playback_and_performance">
@@ -99,7 +99,7 @@ function App() {
           </Route>
 
           <Route path="/settings">
-            <SettingsSidebar />
+            <Settings />
           </Route>
 
           <Route path="/">

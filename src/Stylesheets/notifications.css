@@ -32,3 +32,16 @@
     background-color: rgb(46, 45, 45);
     margin-bottom: 10px;
 }
+.settings_icon_notification{
+    text-align: center;
+    height: max-content;
+    padding: 20px 30px 20px 30px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.settings_icon_notification:hover{
+    background-color: gray;
+    transition: all;
+    transition-duration: 0.5s;
+}
