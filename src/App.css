@@ -52,3 +52,13 @@ body{
 .AppSidebar_report{
   width: 20%;
 }
+.connect_to_game_back{
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  position:relative;
+}
+.connect_to_game{
+  position: fixed;
+  opacity: 1;
+}

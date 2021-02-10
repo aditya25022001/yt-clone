@@ -13,6 +13,8 @@ import { Account } from './components/Account';
 import { Notification } from './components/Notification';
 import { Playback } from './components/Playback';
 import { Privacy } from './components/Privacy';
+import { ConnectedApps } from './components/ConnectedApps';
+import { ConnectGameTemplate } from './components/ConnectGameTemplate';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -98,6 +100,23 @@ function App() {
             <Privacy />
           </Route>
 
+          <Route path="/settings/connected_apps/connect">
+            <div className="connect_to_game_back">
+              <ConnectedApps />
+            </div>
+            <div className="connect_to_game">
+              <ConnectGameTemplate
+              gameImage="https://desktopwalls.net/wp-content/uploads/2016/06/EA%20Games%20Logo%20Dragon%20Blood%20Desktop%20Wallpaper.jpg"
+              accountImage="https://lh3.googleusercontent.com/ogw/ADGmqu9k6epTjqzx9EQlSABN8mVjuuBPLlWPfJD2V8Yhhg=s32-c-mo"
+              name="Aditya Uday Ubale"
+              />
+            </div>
+          </Route>
+          
+          <Route path="/settings/connected_apps">
+            <ConnectedApps />
+          </Route>
+          
           <Route path="/settings">
             <Settings />
           </Route>

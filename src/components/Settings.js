@@ -24,7 +24,11 @@ export const Settings = () => {
                     Privacy
                 </Link>
                 </div>
-                <div className="settings_sidebar_elements" id="settings_sidebar_conn_apps">Connected apps</div>
+                <div className="settings_sidebar_elements" id="settings_sidebar_conn_apps">
+                <Link to="/settings/connected_apps" style={{ textDecoration:'none', color:'white', cursor:'pointer' }}>
+                    Connected apps
+                </Link>    
+                </div>
             </div>
             <div style={{ display:'flex', flexDirection:'row' }}>
                 <div className="settings_sidebar_elements" id="settings_sidebar_billing">Billing and payments</div>
