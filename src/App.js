@@ -15,6 +15,8 @@ import { Playback } from './components/Playback';
 import { Privacy } from './components/Privacy';
 import { ConnectedApps } from './components/ConnectedApps';
 import { ConnectGameTemplate } from './components/ConnectGameTemplate';
+import { Advanced } from './components/Advanced';
+import { Billing } from './components/Billing';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -115,6 +117,14 @@ function App() {
           
           <Route path="/settings/connected_apps">
             <ConnectedApps />
+          </Route>
+
+          <Route path="/settings/advanced_settings">
+            <Advanced />
+          </Route>
+
+          <Route path="/settings/billing_and_payments">
+            <Billing />
           </Route>
           
           <Route path="/settings">

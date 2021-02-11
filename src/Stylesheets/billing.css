@@ -1,0 +1,28 @@
+.main_div_biling{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-top: 4%;
+    font-family: sans-serif;
+}
+.settings_icon_billing{
+    text-align: center;
+    height: max-content;
+    padding: 20px 30px 20px 30px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.settings_icon_billing:hover{
+    background-color: gray;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.hrline_billing{
+    background-color: rgb(68, 67, 67);
+    height: 0.5px;
+    width: 90%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}

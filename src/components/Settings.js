@@ -31,8 +31,16 @@ export const Settings = () => {
                 </div>
             </div>
             <div style={{ display:'flex', flexDirection:'row' }}>
-                <div className="settings_sidebar_elements" id="settings_sidebar_billing">Billing and payments</div>
-                <div className="settings_sidebar_elements" id="settings_sidebar_adv_settings">Advanced settings</div>
+                <div className="settings_sidebar_elements" id="settings_sidebar_billing">
+                <Link to="/settings/billing_and_payments" style={{ textDecoration:'none', color:'white', cursor:'pointer' }}>
+                    Billing and payments
+                </Link>
+                </div>
+                <div className="settings_sidebar_elements" id="settings_sidebar_adv_settings">
+                    <Link to="/settings/advanced_settings" style={{ textDecoration:'none', color:'white', cursor:'pointer' }}>
+                        Advanced settings
+                    </Link>
+                </div>
             </div>
             <div id="settings_sidebar_play_per">
             <Link to="/settings/playback_and_performance" style={{ textDecoration:'none', color:'white', cursor:'pointer' }}>

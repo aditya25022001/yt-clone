@@ -8,7 +8,7 @@ export const ConnectedApps = () => {
         <div className="main_div_connected_apps">
             <div className="div_connected_one">
                 <div style={{ marginBottom:'3%' }}>
-                    <div style={{ fontWeight:550, marginBottom:'8%' }}>Connected apps</div>
+                    <div style={{ fontWeight:550, marginBottom:'8%', fontSize:18 }}>Connected apps</div>
                     <div style={{ fontSize:25, marginBottom:'3%' }}>Expand your experience</div>
                     <div style={{ color:'gray', fontSize:14 }}>Connect YouTube with other apps and watch more easily</div>
                     <div style={{fontSize:14}}><a href="" style={{ color:'rgb(0,187,255)', textDecoration:'none' }}>See all sites authorized to access your Google Account</a></div>
