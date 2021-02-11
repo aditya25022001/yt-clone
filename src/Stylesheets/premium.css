@@ -1,0 +1,51 @@
+.main_div_premium_sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.first_div_premium{
+    display:flex; 
+    flex-direction:column;
+    align-items:center;
+    background-color:whitesmoke; 
+    width:85%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+.button_buy_premium{
+    background-color: rgb(0, 174, 255);
+    border:none;
+    outline: none;
+    outline-offset: none;
+    padding: 1%;
+    border-radius: 2px;
+    font-weight: bolder;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.second_div_premium{
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: row;
+    width: 85%;
+    justify-content: center;
+    background-color:rgb(27,25,25);
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+.third_div_premium{
+    background-image: url('https://media.pri.org/s3fs-public/styles/open_graph/public/story/images/Music%20Listening.jpg?itok=NW5NoHnc');
+    width: 85%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    align-items: flex-end;
+    justify-content: flex-end;
+}

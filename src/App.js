@@ -17,6 +17,7 @@ import { ConnectedApps } from './components/ConnectedApps';
 import { ConnectGameTemplate } from './components/ConnectGameTemplate';
 import { Advanced } from './components/Advanced';
 import { Billing } from './components/Billing';
+import { Premium } from './components/Premium';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -129,6 +130,10 @@ function App() {
           
           <Route path="/settings">
             <Settings />
+          </Route>
+
+          <Route path="/buy_premium">
+            <Premium />
           </Route>
 
           <Route path="/">
