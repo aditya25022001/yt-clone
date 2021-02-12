@@ -38,7 +38,9 @@ export const SideBar = () => {
             <div className="subscribed">SUBSCRIPTIONS</div>
             <div className="hrline"></div>
             <div className="more">MORE FROM YOUTUBE</div>
-            <div className="yt-premium"><Elements className="yt-premium" Icon={<YouTubeIcon style={{fontSize:20}}/>} title="YouTube Premium" /></div>
+            <Link to="/buy_premium" style={{ textDecoration:'none' }}>
+                <div className="yt-premium"><Elements className="yt-premium" Icon={<YouTubeIcon style={{fontSize:20}}/>} title="YouTube Premium" /></div>
+            </Link>
             <div className="movies"><Elements clasName="movies" Icon={<LocalMoviesIcon style={{fontSize:20}}/>} title="Movies" /></div>
             <div className="gaming"><Elements className="gaming" Icon={<SportsEsportsIcon style={{fontSize:20}}/>} title="Gaming" /></div>
             <div className="live"><Elements className="live" Icon={<LiveTvIcon style={{fontSize:20}}/>} title="Live" /></div>

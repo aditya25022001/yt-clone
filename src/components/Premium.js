@@ -4,13 +4,44 @@ import PlayCircleOutlineOutlinedIcon from '@material-ui/icons/PlayCircleOutlineO
 import GetAppIcon from '@material-ui/icons/GetApp';
 import PlayCircleFilledWhiteIcon from '@material-ui/icons/PlayCircleFilledWhite';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import '../Stylesheets/premium.css';
 
 export const Premium = () => {
-    
-    const [ initStyle, finalStyle ] = useState({
-        display:'none'
+
+    const [downDown, upDown] = useState(<ExpandMoreIcon/>);
+    const [downMem, upMem] = useState(<ExpandMoreIcon/>);
+    const [downBack, upBack] = useState(<ExpandMoreIcon/>);
+    const [downPrem, upPrem] = useState(<ExpandMoreIcon/>);
+    const [premiumPrev, premiumFin] = useState(true);
+    const [downloadPrev, downloadFin] = useState(true);
+    const [membershipPrev, membershipFin] = useState(true);
+    const [backGroundPrev, backGroundFin] = useState(true); 
+    const [initStylePrem, finalStylePrem] = useState({
+        display:'none',
     })
+    const [initStyleDown, finalStyleDown] = useState({
+        display:'none',
+    })
+    const [initStyleBack, finalStyleBack] = useState({
+        display:'none',
+    })
+    const [initStyleMemb, finalStyleMemb] = useState({
+        display:'none',
+    })
+    const fin = {
+        display:'flex',
+        color:'gray',
+        paddingTop:'3%',
+        fontWeight:500,
+        fontSize:17
+    }
+    const finPrem = {
+        display:'flex',
+        flexDirection:'column',
+        color:'gray',
+        paddingTop:'3%'
+     }
     
     return (
         <div className="main_div_premium_sidebar">
@@ -71,40 +102,103 @@ export const Premium = () => {
             <div className="faqs_premium">
                 <div style={{ fontWeight:350, fontSize:30,marginBottom:'8%' }}>FAQ</div>
                 <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
-                    <div>What is included with YouTube Premium?</div>
-                    <ExpandMoreIcon onClick={
-                        ()=>{
-                            finalStyle({
-                                display:'flex',
-                                color:'white',
-                                color:'gray'
-                            })
+                    <div onClick={ () => {
+                            if(premiumPrev){
+                                upPrem(<ExpandLessIcon/>);
+                                finalStylePrem(finPrem);
+                                premiumFin(false);
+                            }
+                            else{
+                                upPrem(<ExpandMoreIcon />);
+                                premiumFin(true);
+                                finalStylePrem({display:'none'})
+                            }
                         }
-                    } />
+                    }>What is included with YouTube Premium?</div>
+                    {downPrem}
                 </div>
-                <div style={initStyle}>Background play allows videos and music
+                <div style={initStylePrem}>
+                    <div style={{ fontWeight:600 }}>YouTube</div>
+                    <div>
+                        <ul style={{ fontSize:17, fontWeight:500 }}>
+                            <li>Ad-free videos: Watch millions of videos uninterrupted by ads. <a href="" style={{ textDecoration:'none', color:'rgb(0,187,255)' }}>Learn more</a></li>
+                            <li>Download videos to watch offline: Save videos and playlists on mobile devices and play them offline</li>
+                            <li>Play in the background: Keep videos playing when using other apps or when your screen is off <a href="" style={{ textDecoration:'none', color:'rgb(0,187,255)' }}>YouTube Music</a></li>
+                            <li>Easily explore the world of music with the new and improved YouTube Music app</li>
+                            <li>Ad-free music: Listen to millions of songs uninterrupted by ads</li>
+                            <li>Download music to listen offline: Save music and playlists in the YouTube Music app and listen offline</li>
+                            <li>Play in the background: Keep music playing when using other apps or when your screen is off <a href="" style={{ textDecoration:'none', color:'rgb(0,187,255)' }}>YouTube Kids</a></li>
+                            <li>Ad-free and offline play in the YouTube Kids app</li>
+                        </ul>
+                        </div>
+                </div>
+                <div className="hrline_premium"></div>
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+                    <div onClick={ () => {
+                            if(downloadPrev){
+                                upDown(<ExpandLessIcon/>);
+                                finalStyleDown(fin);
+                                downloadFin(false);
+                            }
+                            else{
+                                upDown(<ExpandMoreIcon />);
+                                downloadFin(true);
+                                finalStyleDown({display:'none'})
+                            }
+                        }
+                    }
+                    >How does downloading videos and music work?</div>
+                    {downDown}
+                </div>
+                <div style={initStyleDown}>
+                    Download videos and music on your mobile devices to watch and listen offline for up to 30 days without being connected to the internet. For more details on how to download videos and music, please see this Help Center article.
+                </div>
+                <div className="hrline_premium"></div>
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+                    <div onClick={ () => {
+                            if(backGroundPrev){
+                                upBack(<ExpandLessIcon/>);
+                                finalStyleBack(fin);
+                                backGroundFin(false);
+                            }
+                            else{
+                                upBack(<ExpandMoreIcon />);
+                                backGroundFin(true);
+                                finalStyleBack({display:'none'})
+                            }
+                        }
+                    }>What is background play?</div>
+                    {downBack}
+                </div>
+                <div style={initStyleBack}>Background play allows videos and music
                     to keep playing in the background, even
                     when you open other apps or turn the screen 
                     off on your mobile device. For more details 
                     on background play, please see this Help Center article.
                 </div>
+
                 <div className="hrline_premium"></div>
                 <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
-                    <div>How does downloading videos and music work?</div>
-                    <ExpandMoreIcon />
+                    <div onClick={ () => {
+                            if(membershipPrev){
+                                upMem(<ExpandLessIcon/>);
+                                finalStyleMemb(fin);
+                                membershipFin(false);
+                            }
+                            else{
+                                upMem(<ExpandMoreIcon />);
+                                membershipFin(true);
+                                finalStyleMemb({display:'none'})
+                            }
+                        }
+                    } >How can I cancel my membership?</div>
+                    {downMem}
+                </div>
+                <div style={initStyleMemb}>
+                    You can cancel your membership by visiting the Paid Membership page. This will revert your account to free YouTube. You can rejoin YouTube Premium at any time.
                 </div>
                 <div className="hrline_premium"></div>
-                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
-                    <div>What is background play?</div>
-                    <ExpandMoreIcon />
-                </div>
-                <div className="hrline_premium"></div>
-                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
-                    <div>How can I cancel my membership?</div>
-                    <ExpandMoreIcon />
-                </div>
-                <div className="hrline_premium"></div>
-                <div style={{ marginTop:'18%', fontSize:20 }}>Have other questions? Visit the <a href="" style={{ color:'rgb(0,187,255)', textDecoration:'none' }}>YouTube Help Center</a></div>
+                <div style={{ marginTop:'18%', fontSize:18 }}>Have other questions? Visit the <a href="" style={{ color:'rgb(0,187,255)', textDecoration:'none' }}>YouTube Help Center</a></div>
             </div>
         </div>
     )
