@@ -41,13 +41,28 @@ export const Premium = () => {
             </div>
             <div className="third_div_premium">
                 <div>
-                    <div style={{ fontSize:40 }}>Ad-free</div>
-                    <div style={{ color:'gray', fontSize:20, width:'40%', fontWeight:400 }}>Enjoy watching YouTube uninterrupted by ads whenever you sign in - on your mobile device, desktop, or enabled TV.</div>
+                    <div style={{ fontSize:40}}>Ad-free</div>
+                    <div style={{ color:'gray', fontSize:20, width:'50%', fontWeight:500}}>Enjoy watching YouTube uninterrupted by ads whenever you sign in - on your mobile device, desktop, or enabled TV.</div>
                 </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div className="fourth_div_premium">
+                <div style={{ paddingLeft:'45%', paddingTop:'5%' }}>
+                    <div style={{ fontSize:40,display:'flex', justifyContent:'space-evenly'}}>Download and go</div>
+                    <div style={{ color:'gray', fontSize:20, fontWeight:500, display:'flex', justifyContent:'flex-end', paddingLeft:'28%'}}>Now, choose from more of your favorite videos to download and watch offline.</div>
+                </div>
+            </div>
+            <div className="fifth_div_premium">
+                <div>
+                    <div style={{ fontSize:40}}>Background play</div>
+                    <div style={{ color:'gray', fontSize:20, width:'50%', fontWeight:500}}>With YouTube Premium, your video plays uninterrupted in the background, even when you open another app.</div>
+                </div>
+            </div>
+            <div className="sixth_div_premium">
+                <div style={{ paddingLeft:'45%', paddingTop:'5%' }}>
+                    <div style={{ fontSize:40,display:'flex', justifyContent:'flex-end', paddingRight:'12%'}}>YouTube Music Premium</div>
+                    <div style={{ color:'gray', fontSize:20, fontWeight:500, display:'flex', justifyContent:'flex-end', paddingLeft:'28%'}}>Easily explore the world of music ad-free, offline, and with the screen locked. Available on mobile and desktop.</div>
+                </div>
+            </div>
             <div></div>
         </div>
     )
