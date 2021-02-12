@@ -45,6 +45,14 @@ body{
   margin-bottom: 0;
   padding-bottom: 0;
 }
+.AppBody_dropdown{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  opacity: 1;
+  position: relative;
+
+}
 .AppBody_report{
   display: flex;
   flex-direction: row;
@@ -61,4 +69,14 @@ body{
 .connect_to_game{
   position: fixed;
   opacity: 1;
+}
+.dropdown_main{
+  position: fixed;
+  margin-top: 4%;
+  background-color: rgb(27,25,25);
+  opacity: 0.99;
+  right: 0;
+}
+.dropdown_hover:hover, .res-mode:hover{
+  background-color: rgb(85,83,83);
 }

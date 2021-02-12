@@ -11,10 +11,13 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 import { Dropdown } from './Dropdown';
+import { Flag } from '@material-ui/icons';
 
 export const Navigation = () => {
      
     const [searchTerm, setSearchTerm] = useState('');
+    const [toggleOff, toggleOn] = useState(true);
+    const [initLink, finalLink] = useState("/more_from_youtube");
 
     return (
         <div className="navigation">
@@ -43,7 +46,16 @@ export const Navigation = () => {
                 <VideoCallIcon style={{color:"white"}} />
                 <AppsIcon style={{color:"white"}} />
                 <NotificationsIcon style={{color:"white"}} />
-                <Link to="/hello">
+                <Link onClick={ ()=> {
+                    if(toggleOff){
+                        finalLink("/more_from_youtube");
+                        toggleOn(false);
+                    }
+                    else{
+                        finalLink("/");
+                        toggleOn(true);
+                    }
+                } } to={initLink} >
                     <AccountCircleIcon style={{color:"white", fontSize:40}}/>
                 </Link>
             </div>

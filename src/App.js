@@ -38,8 +38,14 @@ function App() {
             </div>
           </Route>
           
-          <Route path="/hello">
-            <Dropdown />
+          <Route path="/more_from_youtube">
+            <div className="AppBody_dropdown">
+              <SideBar className="AppSidebar"/>
+              <Videos className="AppVideos"/>
+            </div>
+            <div className="dropdown_main">
+              <Dropdown />
+            </div>
           </Route>
           
           <Route path="/watch">

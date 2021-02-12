@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import PlayCircleOutlineOutlinedIcon from '@material-ui/icons/PlayCircleOutlineOutlined';
 import GetAppIcon from '@material-ui/icons/GetApp';
@@ -7,6 +7,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import '../Stylesheets/premium.css';
 
 export const Premium = () => {
+    
+    const [ initStyle, finalStyle ] = useState({
+        display:'none'
+    })
+    
     return (
         <div className="main_div_premium_sidebar">
             <div className="first_div_premium">
@@ -63,7 +68,44 @@ export const Premium = () => {
                     <div style={{ color:'gray', fontSize:20, fontWeight:500, display:'flex', justifyContent:'flex-end', paddingLeft:'28%'}}>Easily explore the world of music ad-free, offline, and with the screen locked. Available on mobile and desktop.</div>
                 </div>
             </div>
-            <div></div>
+            <div className="faqs_premium">
+                <div style={{ fontWeight:350, fontSize:30,marginBottom:'8%' }}>FAQ</div>
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+                    <div>What is included with YouTube Premium?</div>
+                    <ExpandMoreIcon onClick={
+                        ()=>{
+                            finalStyle({
+                                display:'flex',
+                                color:'white',
+                                color:'gray'
+                            })
+                        }
+                    } />
+                </div>
+                <div style={initStyle}>Background play allows videos and music
+                    to keep playing in the background, even
+                    when you open other apps or turn the screen 
+                    off on your mobile device. For more details 
+                    on background play, please see this Help Center article.
+                </div>
+                <div className="hrline_premium"></div>
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+                    <div>How does downloading videos and music work?</div>
+                    <ExpandMoreIcon />
+                </div>
+                <div className="hrline_premium"></div>
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+                    <div>What is background play?</div>
+                    <ExpandMoreIcon />
+                </div>
+                <div className="hrline_premium"></div>
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
+                    <div>How can I cancel my membership?</div>
+                    <ExpandMoreIcon />
+                </div>
+                <div className="hrline_premium"></div>
+                <div style={{ marginTop:'18%', fontSize:20 }}>Have other questions? Visit the <a href="" style={{ color:'rgb(0,187,255)', textDecoration:'none' }}>YouTube Help Center</a></div>
+            </div>
         </div>
     )
 }

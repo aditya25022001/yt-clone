@@ -14,11 +14,13 @@ import FeedbackIcon from '@material-ui/icons/Feedback';
 import KeyboardIcon from '@material-ui/icons/Keyboard';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import { ChannelInfo } from './ChannelInfo';
+import { Link } from 'react-router-dom';
+import '../App.css';
 
 export const Dropdown = () => {
     return (
-        <div className="main-wrapper" id="main-wrapper">
-            <div className="main-info">
+        <div className="main-wrapper" id="main-wrapper" style={{ right:0 }}>
+            <div className="main-info" style={{ color:'white', display:'flex', marginBottom:'2%' }}>
                 <ChannelInfo icon="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg" 
                               name="Aditya Uday Ubale" 
                               email="adityaubale63@gmail.com" />
@@ -26,19 +28,38 @@ export const Dropdown = () => {
             <Elements Icon={<AccountBoxIcon />} title="Your channel"/>
             <Elements Icon={<MonetizationOnIcon/>} title="Purchases and memberships"/>
             <Elements Icon={<SettingsIcon/>} title="YouTube Studio"/>
-            <Elements Icon={<SupervisorAccountIcon/>} title="Switch account" /><KeyboardArrowRightIcon/>
+            <div className="dropdown_hover" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', paddingRight:'4%' }}>
+                <Elements Icon={<SupervisorAccountIcon/>} title="Switch account" />
+                <KeyboardArrowRightIcon style={{ color:'white', fontSize:18}}/>
+            </div>
             <Elements Icon={<ExitToAppIcon/>} title="Sign out"/>
-            <Elements Icon={<Brightness4Icon/>} title="Appearance:Dark"/><KeyboardArrowRightIcon/>
-            <Elements Icon={<TranslateIcon/>} title="Language:English" /><KeyboardArrowRightIcon/>
-            <Elements Icon={<LanguageIcon/>} title="Location:India"/><KeyboardArrowRightIcon/>
-            <Elements Icon={<SettingsIcon/>} title="Settings"/>
+            <div className="dropdown_hover" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', paddingRight:'4%' }}>
+                <Elements Icon={<Brightness4Icon/>} title="Appearance:Dark"/>
+                <KeyboardArrowRightIcon style={{ color:'white', fontSize:18}}/>
+            </div>
+            <div className="dropdown_hover" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', paddingRight:'4%' }}>
+                <Elements Icon={<TranslateIcon/>} title="Language:English" />
+                <KeyboardArrowRightIcon style={{ color:'white', fontSize:18}}/>
+            </div>
+            <div className="dropdown_hover" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', paddingRight:'4%' }}>
+                <Elements Icon={<LanguageIcon/>} title="Location:India"/>
+                <KeyboardArrowRightIcon style={{ color:'white', fontSize:18}}/>
+            </div>
+            <Link to="/settings" style={{ textDecoration:'none' }}> 
+                <Elements Icon={<SettingsIcon/>} title="Settings"/>
+            </Link>
             <Elements Icon={<SecurityIcon/>} title="Your data in YouTube"/>
-            <Elements Icon={<HelpIcon/>} title="Help" />
-            <Elements Icon={<FeedbackIcon/>} title="Send feedback"/>
+            <Link to="/help" style={{ textDecoration:'none' }}>
+                <Elements Icon={<HelpIcon/>} title="Help" />
+            </Link>
+            <Link to="/feedback" style={{ textDecoration:'none' }}>
+                <Elements Icon={<FeedbackIcon/>} title="Send feedback"/>
+            </Link>
             <Elements Icon={<KeyboardIcon/>} title="Keyboard shortcuts"/>
-            <div className="res-mode">
-                Restricted mode:Off
-                <KeyboardArrowRightIcon />
+            <div style={{ height:0.5, backgroundColor:'rgb(77,77,77)', marginTop:'2%', marginBottom:'2%' }}></div>
+            <div className="res-mode" style={{ color:'white',marginBottom:'2%', paddingLeft:'8%', display:'flex', alignItems:'center', flexDirection:'row' }}>
+                <div style={{ marginTop:'4%', marginBottom:'4%' }}>Restricted mode:Off</div>
+                <KeyboardArrowRightIcon style={{ color:'white', fontSize:18, marginLeft:'5%' }} />
             </div>
         </div>
     )
