@@ -22,17 +22,24 @@ import FeedbackIcon from '@material-ui/icons/Feedback';
 import { Link } from 'react-router-dom';
 
 export const SideBar = () => {
+
     return (
         <div className="sidebar">      
-            <div className="home"><Elements className="home" Icon={<HomeIcon style={{fontSize:25}}/>} title="Home"/></div>       
+            <Link to="/" style={{ textDecoration:'none' }}>
+                <div className="home"><Elements className="home" Icon={<HomeIcon style={{fontSize:25}}/>} title="Home"/></div>       
+            </Link>
             <div className="trending"><Elements className="trending" Icon={<WhatshotIcon style={{fontSize:20}}/>} title="Trending" /></div> 
             <div className="subscriptions"><Elements className="subscriptions" Icon={<SubscriptionsIcon style={{fontSize:20}}/>} title="Subscriptions" /></div>    
             <div className="hrline"></div>
             <div className="library"><Elements className="library" Icon={<VideoLibraryIcon style={{fontSize:20}}/>} title="Library" /></div>
             <div className="history"><Elements className="history" Icon={<HistoryIcon style={{fontSize:20}}/>} title="History" /></div>
             <div className="your-videos"><Elements className="your-videos" Icon={<VideoLabelIcon style={{fontSize:20}}/>} title="Your Videos" /></div>
-            <div className="watch-later"><Elements className="watch-later" Icon={<WatchLaterIcon style={{fontSize:20}}/>} title="Watch Later" /></div>
-            <div className="liked-videos"><Elements className="liked-videos" Icon={<ThumbUpAltIcon style={{fontSize:20}}/>} title="Liked Videos" /></div>   
+            <Link to="/watch_later" style={{ textDecoration:'none' }}>
+                <div className="watch-later"><Elements className="watch-later" Icon={<WatchLaterIcon style={{fontSize:20}}/>} title="Watch Later" /></div>
+            </Link>
+            <Link to="/liked_videos" style={{ textDecoration:'none' }}>
+                <div className="liked-videos"><Elements className="liked-videos" Icon={<ThumbUpAltIcon style={{fontSize:20}}/>} title="Liked Videos" /></div>   
+            </Link>
             <div className="show-more"><Elements clasName="show-more" Icon={<ExpandMoreIcon style={{fontSize:20}}/>} title="Show more"/></div> 
             <div className="hrline"></div>
             <div className="subscribed">SUBSCRIPTIONS</div>

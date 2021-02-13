@@ -15,10 +15,14 @@ body{
   opacity: 0.99;
   z-index: 100;
 }
-.AppBody{
+.AppBody, .watch_later_app, .liked_app{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+.watch_later_app_sidebar, .liked_app_sidebar{
+  width: 40%;
+  margin-right: 0;
 }
 .AppBody_feedback{
   display: flex;

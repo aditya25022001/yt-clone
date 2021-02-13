@@ -101,8 +101,7 @@ export const Premium = () => {
             </div>
             <div className="faqs_premium">
                 <div style={{ fontWeight:350, fontSize:30,marginBottom:'8%' }}>FAQ</div>
-                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
-                    <div onClick={ () => {
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }} onClick={ () => {
                             if(premiumPrev){
                                 upPrem(<ExpandLessIcon/>);
                                 finalStylePrem(finPrem);
@@ -114,7 +113,8 @@ export const Premium = () => {
                                 finalStylePrem({display:'none'})
                             }
                         }
-                    }>What is included with YouTube Premium?</div>
+                    }>
+                    <div>What is included with YouTube Premium?</div>
                     {downPrem}
                 </div>
                 <div style={initStylePrem}>
@@ -133,8 +133,7 @@ export const Premium = () => {
                         </div>
                 </div>
                 <div className="hrline_premium"></div>
-                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
-                    <div onClick={ () => {
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }} onClick={ () => {
                             if(downloadPrev){
                                 upDown(<ExpandLessIcon/>);
                                 finalStyleDown(fin);
@@ -147,15 +146,15 @@ export const Premium = () => {
                             }
                         }
                     }
-                    >How does downloading videos and music work?</div>
+                    >
+                    <div>How does downloading videos and music work?</div>
                     {downDown}
                 </div>
                 <div style={initStyleDown}>
                     Download videos and music on your mobile devices to watch and listen offline for up to 30 days without being connected to the internet. For more details on how to download videos and music, please see this Help Center article.
                 </div>
                 <div className="hrline_premium"></div>
-                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
-                    <div onClick={ () => {
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }} onClick={ () => {
                             if(backGroundPrev){
                                 upBack(<ExpandLessIcon/>);
                                 finalStyleBack(fin);
@@ -167,7 +166,8 @@ export const Premium = () => {
                                 finalStyleBack({display:'none'})
                             }
                         }
-                    }>What is background play?</div>
+                    }>
+                    <div>What is background play?</div>
                     {downBack}
                 </div>
                 <div style={initStyleBack}>Background play allows videos and music
@@ -178,8 +178,7 @@ export const Premium = () => {
                 </div>
 
                 <div className="hrline_premium"></div>
-                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
-                    <div onClick={ () => {
+                <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between' }} onClick={ () => {
                             if(membershipPrev){
                                 upMem(<ExpandLessIcon/>);
                                 finalStyleMemb(fin);
@@ -191,7 +190,8 @@ export const Premium = () => {
                                 finalStyleMemb({display:'none'})
                             }
                         }
-                    } >How can I cancel my membership?</div>
+                    } >
+                    <div>How can I cancel my membership?</div>
                     {downMem}
                 </div>
                 <div style={initStyleMemb}>

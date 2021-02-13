@@ -18,6 +18,8 @@ import { ConnectGameTemplate } from './components/ConnectGameTemplate';
 import { Advanced } from './components/Advanced';
 import { Billing } from './components/Billing';
 import { Premium } from './components/Premium';
+import { WatchLater } from './components/WatchLater';
+import { Liked } from './components/Liked';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -140,6 +142,34 @@ function App() {
 
           <Route path="/buy_premium">
             <Premium />
+          </Route>
+
+          <Route path="/watch_later">
+            <div className="watch_later_app">
+             <div className="watch_later_app_sidebar"><SideBar/></div> 
+              <WatchLater 
+                thumbnail_main_watch="https://static.billboard.com/files/2020/12/top100songs-2020-billboard-1500-1607463880-compressed.jpg"
+                accImage_watch="https://lh3.googleusercontent.com/ogw/ADGmqu9k6epTjqzx9EQlSABN8mVjuuBPLlWPfJD2V8Yhhg=s32-c-mo"
+                accname_watch="Aditya Uday Ubale"
+                updates="today"
+                total_watch_later="210"
+                views_watch="No"
+              />
+            </div>
+          </Route>
+
+          <Route path="/liked_videos">
+            <div className="liked_app">
+              <div className="liked_app_sidebar"><SideBar/></div> 
+              <Liked
+                thumbnail_main_liked="https://static.billboard.com/files/2020/12/top100songs-2020-billboard-1500-1607463880-compressed.jpg"
+                accImage_liked="https://lh3.googleusercontent.com/ogw/ADGmqu9k6epTjqzx9EQlSABN8mVjuuBPLlWPfJD2V8Yhhg=s32-c-mo"
+                accname_liked="Aditya Uday Ubale"
+                updates_liked="2 days ago"
+                total_liked="334"
+                views_liked="No"
+              />
+            </div>
           </Route>
 
           <Route path="/">
