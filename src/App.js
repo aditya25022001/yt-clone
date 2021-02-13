@@ -52,15 +52,15 @@ function App() {
           
           <Route path="/watch">
             <VideoPage 
-              thumbnailMain="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-              titleMain="How to get fit in 30 days"
-              details="get fit in 30 days as hell"
+              thumbnailMain="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+              titleMain="Acoustic Rasputin version"
+              details="learn acoustic in 30 days"
               viewsMain="2.3 M views"
               whenMain="5 days ago"
               likes="5.6k"
               dislikes="973"
-              channelNameMain="AdiFitness"
-              channelImage="https://images.outlookindia.com/public/uploads/articles/2020/1/23/Hrithik_Roshan_570_850.jpg"
+              channelNameMain="AcousticSlayers"
+              channelImage="https://nikonites.com/attachments/photo-feedback/357d1282856005-b-w-guitar-_dsc0064.jpg"
               subscribers="1.3M"
               totalComments="5"
             />  

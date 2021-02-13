@@ -11,7 +11,38 @@ import { Comments } from './Comments';
 import SortIcon from '@material-ui/icons/Sort';
 
 export const VideoPage = ({ thumbnailMain, titleMain, details, viewsMain, whenMain, likes, dislikes, channelNameMain, channelImage, subscribers, totalComments }) => {
+    
+ const inSty = {
+        backgroundColor: 'rgb(204, 31, 31)',
+        border: 'none',
+        outline: 'none',
+        outlineOffset: 'none',
+        color: 'white',
+        paddingTop:12,
+        paddingRight:15,
+        paddingBottom:10,
+        paddingLeft:15,
+        fontWeight: 600,
+        borderRadius: 2
+    }
+    const [inStyle, finStyle] = useState(inSty);
+    const finSty = {
+        backgroundColor: 'rgb(115,115,115)',
+        border: 'none',
+        outline: 'none',
+        outlineOffset: 'none',
+        color: 'white',
+        paddingTop:12,
+        paddingRight:15,
+        paddingBottom:10,
+        paddingLeft:15,
+        fontWeight: 600,
+        borderRadius: 2
+    }
+
     const [state, setstate] = useState('SUBSCRIBE');
+    const [stateToggle, setstateToggle] = useState(true);
+
     return (
         <div className="main-page">
             <div className="main-video">
@@ -39,7 +70,19 @@ export const VideoPage = ({ thumbnailMain, titleMain, details, viewsMain, whenMa
                         <div style={{ fontSize:12, fontWeight:500, color:'rgb(112,112,112)'}}>{subscribers} subscribers</div>
                     </div>
                     <div className="subscribe">
-                        <button className="subs" onClick={e => setstate('SUBSCRIBED')}>{state}</button>
+                        <button style={inStyle} onClick={() => {
+                                if(stateToggle){
+                                    setstate('SUBSCRIBED');
+                                    setstateToggle(false);
+                                    finStyle(finSty);
+                                }
+                                else{
+                                    setstate('SUBSCRIBE');
+                                    setstateToggle(true);
+                                    finStyle(inSty)
+                                }
+                            }
+                        }>{state}</button>
                     </div> 
                 </div>
                 <div className="hrline"></div>
@@ -49,40 +92,40 @@ export const VideoPage = ({ thumbnailMain, titleMain, details, viewsMain, whenMa
                     <div className="sortby">SORT BY</div>
                 </div>
                 <Comments 
-                    accountImage="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg"
-                    accountName="Fitness Freak"
+                    accountImage="https://static.toiimg.com/photo/msid-73984558/73984558.jpg"
+                    accountName="Music is world"
                     when="2 months ago"
                     content="worth watching Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                     likes="28"
                     dislikes="5"
                 />
                 <Comments 
-                    accountImage="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg"
-                    accountName="Fitness Freak"
+                    accountImage="https://static.toiimg.com/photo/msid-73984558/73984558.jpg"
+                    accountName="Music is world"
                     when="2 months ago"
                     content="worth watching Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                     likes="28"
                     dislikes="5"
                 />
                 <Comments 
-                    accountImage="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg"
-                    accountName="Fitness Freak"
+                    accountImage="https://static.toiimg.com/photo/msid-73984558/73984558.jpg"
+                    accountName="Music is world"
                     when="2 months ago"
                     content="worth watching Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                     likes="28"
                     dislikes="5"
                 />
                 <Comments 
-                    accountImage="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg"
-                    accountName="Fitness Freak"
+                    accountImage="https://static.toiimg.com/photo/msid-73984558/73984558.jpg"
+                    accountName="Music is world"
                     when="2 months ago"
                     content="worth watching Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                     likes="28"
                     dislikes="5"
                 />
                 <Comments 
-                    accountImage="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg"
-                    accountName="Fitness Freak"
+                    accountImage="https://static.toiimg.com/photo/msid-73984558/73984558.jpg"
+                    accountName="Music is world"
                     when="2 months ago"
                     content="worth watching Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                     likes="28"
@@ -91,116 +134,116 @@ export const VideoPage = ({ thumbnailMain, titleMain, details, viewsMain, whenMa
             </div>
             <div className="sideVideos">
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"
+                    channelName="MusicIndie"
                 />
                 <VideoPageVideos 
-                    thumbnail="https://images.indianexpress.com/2020/03/kumail-hrithik-1200.jpg"
-                    title="How to get fit in 30 days"
+                    thumbnail="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fcd703870-7c23-11e6-ae24-f193b105145e?fit=scale-down&source=next&width=700"
+                    title="New song out Boney M"
                     views="2.3 M views"
                     when="5 days ago"
-                    channelName="AdiFitness"         
+                    channelName="MusicIndie"       
                 />
             </div>
         </div>

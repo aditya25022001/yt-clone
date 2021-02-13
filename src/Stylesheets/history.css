@@ -1,0 +1,13 @@
+.main_div_history{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 100%;
+}
+.hrline_history{
+    height: 0.3px;
+    background-color: rgb(78, 76, 76);
+}
+.side_history{
+    width: 100%;
+}
